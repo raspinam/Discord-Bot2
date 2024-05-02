@@ -14,12 +14,13 @@ app.get('/', (req, res) => {
   res.send('YaY Your Bot Status Changed✨');
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to Robin NTW : http://localhost:${port}`);
-  console.log(`🔗 Powered By Robinayush`);
+  console.log(`🔗 Listening to Ronix Community : http://localhost:${port}`);
+  console.log(`🔗 Powered By RaSpiNa`);
 });
 
+let membercount = message.guild.memberCount
 
-const statusMessages = ["Watching Robin NTW","Playing Minecraft"];
+const statusMessages = ["Watching Ronix Community".membercoun];
 
 
 let currentIndex = 0;
