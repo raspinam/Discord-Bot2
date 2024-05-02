@@ -18,9 +18,24 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RaSpiNa`);
 });
 
-let membercount = message.guild.memberCount
 
-const statusMessages = ["Watching Ronix Community".membercoun];
+
+client.on('ready', () => {
+        setInterval(() => {
+          targetGuild = client.guilds.get('GUILD ID HERE')
+          if(targetGuild) {
+              client.user.setPresence({ game: { name: targetGuild.memberCount + ' people verifying!', type: 'WATCHING' }, status: 'online'  })
+                    .then(console.log)
+                    .catch(console.error);
+          }
+    }, 1000 * 60 * 5);
+
+});
+
+
+
+
+const statusMessages = ["Watching Ronix Community"];
 
 
 let currentIndex = 0;
